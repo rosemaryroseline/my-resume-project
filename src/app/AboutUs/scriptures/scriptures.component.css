@@ -1,0 +1,59 @@
+
+ .hero {
+    display: flex;          
+    justify-content: space-between; 
+    width: 100%px;            
+    height: 800px; 
+    background: linear-gradient(45deg, #000000, #14213d);
+}
+
+.scripture, .scri {
+    width: 30%;              
+    display: flex;          
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center;  
+    background: linear-gradient(85deg, #14213d, #000000);
+}
+
+.button {
+   
+    width: 150px;
+    height: auto;
+    /* background: linear-gradient(45deg, #000000, #14213d); */
+    background: #14213d;
+ padding:20px;
+ margin-top: 30px;
+ border-radius: 50px;
+ border-top-right-radius: 130px;
+ color: #fca311;
+ font-weight: 400;
+}
+.button:hover{
+    background: #fca311;
+    color: #14213d;
+    width: 300px;
+}
+.scri {
+    width: 80%;
+    padding: 20px;
+    background: linear-gradient(45deg, #000000, #14213d);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    color: #fca311;
+    font-size: 50px;
+    font-family: "Edu QLD Beginner", cursive;
+
+}
+.show{
+    color: #fca311;
+    margin-top: 180px;
+    font-family: "Edu QLD Beginner", cursive;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+ 
+
+}

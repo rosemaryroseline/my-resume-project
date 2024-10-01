@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Edu QLD Beginner", cursive;
+}
+.body{
+    background-color:#14213d;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    text-align: center;
+    color: #fca311;
+}
+h3{
+    margin:5px;
+    color: #fca311;
+}
+.skill{
+    width: 500px;
+    margin: 40px;
+    padding: 20px;
+    color: black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+    /* background: linear-gradient(to right, #000000, #14213d); */
+    background-color: black;
+}
+.skill li{
+    margin:10px 0;
+    padding: 5px;
+}
+.bar{
+    background:#14213d;
+display: block;
+height: 20px;
+border: 1px solid rgba(0,0,0,0.3);
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+   height: 20px;
+   float: left;
+   background: linear-gradient(135deg,rgb(192, 157, 4)0%,rgb(36, 65, 105)100%);
+
+}
+.html{
+    width: 90%;
+    animation:html 3s;
+
+}
+.css{
+    width: 60%;
+    animation:css 3s;
+    
+}
+.javascript{
+    width: 60%;
+    animation:javascript 3s;
+    
+}
+.angular{
+    width: 80%;
+    animation:angular 3s;
+    
+}
+.node{
+    width: 60%;
+    animation:node 3s;
+    
+}
+.express{
+    width: 70%;
+    animation:express 3s;
+    
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes angular{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes node{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes express{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+h2{
+    text-align: center;
+    font-size: 2.77rem;
+    color: #fca311;
+    padding-top: 70px;
+}
+#button{
+    padding: 10px 50px;
+    background-color: #071229;
+    color: #fca311;
+   margin-left:  450px;
+   margin-top: 20px;
+   
+}
+@media (min-width:  767px) and (max-width: 1024px) {
+    .body{
+       
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    h2{
+        text-align: center;
+        font-size: 1.37rem;
+        color: #fca311;
+        padding-top: 20px;
+    }
+    #button{
+        padding: 10px 50px;
+      
+       margin-left:  300px;
+       margin-top: 20px;
+       
+    }
+    .skill{
+        margin-left: 150px;
+    }
+}
+@media (min-width:  320px) and (max-width: 476px) {
+
+    /* .skill{
+        width: 900px;
+        margin: 40px;
+        padding: 20px;
+        color: black;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
+     
+        background-color: black;
+    }   */
+    .body{
+        background-color:#14213d;
+        width:1700px;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+}

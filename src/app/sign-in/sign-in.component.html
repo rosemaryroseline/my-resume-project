@@ -1,0 +1,37 @@
+<div class="auther">
+
+  <div class="sub-auther">
+    <div *ngIf="isSignInMode else signupForm" class="form">
+      <h2>Login</h2>
+      <form (ngSubmit)="onSignin()">
+        <input type="email" placeholder="Username or Phone number or email" [(ngModel)]="email" name="email"> <br>
+        <input type="password" [(ngModel)]="password" name="password" placeholder="password"><br>
+        <button type="submit" class="button">Login</button>
+        <h6>Don't have an account? <button class='toggle' (click)="toggleSignInSignUp()">
+            {{isSignInMode? 'sign-up' : 'sign-in'}}
+          </button></h6>
+
+      </form>
+    </div>
+
+
+
+
+    <ng-template #signupForm>
+      <h2>Sign-Up</h2>
+      <form [formGroup]="myform" (ngSubmit)="onSignup()">
+        <input type="email" placeholder="Username or Phone number or email" name="email" formControlName="email"
+          (input)="onEmailInput()"><br>
+        <span *ngIf="emailExistMessage" class="emailExistMessage">{{emailExistMessage}}</span>
+        <input type="text" placeholder="Fullname" formControlName="fullName"><br>
+        <input type="password" name="password" placeholder="password" formControlName="password"><br>
+        <button type="submit" class="button">Sign-Up</button>
+        <h6>Already have an account? <button class='toggle' (click)="toggleSignInSignUp()">
+            {{isSignInMode? 'sign-up' : 'sign-in'}}
+          </button></h6>
+      </form>
+
+    </ng-template>
+  </div>
+</div>
+<app-footer></app-footer>

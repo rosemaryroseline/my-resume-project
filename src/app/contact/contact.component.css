@@ -1,0 +1,151 @@
+
+img {
+    position: absolute;
+ right: -7px;
+
+    width: 30%;
+    height: 100vh; 
+   /* border-radius: 60%; */
+   object-fit:contain;
+  }
+  .sub-class{
+   
+  }
+  .hero{
+    display: flex;
+    flex-direction: row;
+
+  
+   /* background: linear-gradient(45deg, #000000, #14213d, #fca311); */
+   background-color:#14213d ;
+   height: 100vh; 
+  
+  }
+  h1{
+    color:#fca311 ;
+    font-size: 4.47rem;
+    font-family: "Edu QLD Beginner", cursive;
+font-weight: 700;
+  }
+  .form{
+    width: 600px;
+    height: auto;
+   margin: 100px;
+   background: linear-gradient(to right, #000000, #14213d);
+   padding-left: 100px;
+   box-shadow: 0 0 60px #fca311; 
+
+  }
+  input[type='text'],
+input[type='email'],
+input[type='password'],
+button[type='submit']{
+    position: relative;
+    width: 350px;
+    height: 10px;
+   padding-top: 25px;
+   padding-bottom: 10px;
+  
+  margin-bottom: 15px;
+  border-radius: 1px;
+  background-color:transparent;
+color: aliceblue;
+
+}
+label{
+    color: #fca311;
+    font-weight: 600;
+}
+textarea{
+    width: 350px;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    background-color: transparent;
+    color: white;
+}
+/* #button{
+    background-color: #14213d;
+    color: #fca311;
+    padding: 20px;
+    font-size: 1.37rem;
+} */
+#button{
+    position: relative;
+    padding: 30px ;
+    background-color: #14213d;
+    color: #fca311;
+}
+#button:hover{
+    background-color: #fca311 ;
+    color: #14213d;
+}
+@media (min-width:  767px) and (max-width: 1024px) {
+   
+img {
+    position: absolute;
+ right: -7px;
+
+    width: 30%;
+    height: 100vh; 
+   /* border-radius: 60%; */
+   object-fit:contain;
+   
+  }
+  .form{
+    width: 400px;
+    height: 450px;
+margin-left: 50px;
+  }
+  h1{
+    margin-top: 10px;
+    font-size: 1.27rem;
+font-weight: 400;
+margin-left: 40px;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='password'],
+  button[type='submit']{
+      position: relative;
+      width: 200px;
+      height: 5px;
+  
+  }
+  textarea{
+    width: 200px;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 1px;
+    background-color: transparent;
+    color: white;
+}
+}
+
+@media (min-width:  320px) and (max-width: 476px) {
+  .hero{
+    display: flex;
+    flex-direction: column;
+width: 1700px;
+  
+   /* background: linear-gradient(45deg, #000000, #14213d, #fca311); */
+   background-color:#14213d ;
+   height: 150vh; 
+  padding-left: 30px;
+  }
+     
+img {
+display: none;
+ 
+}
+.form{
+  width: 600px;
+  height: auto;
+ margin: 100px;
+ background: linear-gradient(to right, #000000, #14213d);
+ box-shadow: 0 0 60px #fca311; 
+ margin-left: 220px;
+padding: 80px;
+}
+
+}

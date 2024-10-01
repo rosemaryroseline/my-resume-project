@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap');
+
+body{
+    font-family: "Edu QLD Beginner", cursive;
+
+}
+h1,h2,h3,h4,h5,p{
+    font-family: "Edu QLD Beginner", cursive;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+   width: 100%;
+   height: 60px;
+   background-color: #000000;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   z-index: 1000;
+
+   padding: 10px 20px;
+   justify-content: flex-end;
+    
+}
+.navbar-menu{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+.navbar-item{
+    margin: 0 20px;
+}
+.navbar-item a{
+    text-decoration: none;
+    color: #fca311;
+    font-size: 20px;
+    font-family: "Edu QLD Beginner", cursive;
+}
+.dropdown-menu {
+    display: none; 
+    position: absolute; 
+    background-color: black; 
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px;
+    z-index: 1000; 
+}
+
+.dropdown-item {
+    padding: 5px 10px;
+  
+}
+
+.dropdown-item a {
+    color:  #fca311;
+    font-size: 16px;
+   
+} 
+ 
+.dropdown-item a:hover {
+    color:  #fca311;
+ 
+}
+
+
+.navbar-item:hover .dropdown-menu {
+    display: block;
+   
+}
+@media(max-width: 768px){
+    .navbar-item a{
+        font-size: 15px;
+    }
+}
+@media (min-width:  320px) and (max-width: 476px) {
+    .navbar-item a{
+        font-size: 40px;
+    }
+    .navbar{
+        width: 100%;
+        height: 100px;
+         
+     }
+}

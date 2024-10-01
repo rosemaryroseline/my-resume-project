@@ -1,0 +1,18 @@
+<div class="hero">
+    <div class="scripture">
+        <button class="button" (click)="Isaiah()">Isaiah 41:10</button>
+        <button class="button" (click)="Proverbs()">Proverbs 3:5–6</button>
+        <button class="button" (click)="John()">John 16:33</button>
+        <button class="button" (click)="Jeremiah()">Jeremiah 29:11</button>
+        <button class="button" (click)="Deuteronomy()">Deuteronomy 31:6 </button>
+      
+        </div>
+        <div class="scri" *ngIf="!showMessage">{{fileContent}}
+           
+           
+        </div>
+        <div *ngIf="showMessage">
+            <h2 class='show'>"Welcome! Tap a button to reveal a beautiful scripture from the heart of God."</h2>
+        </div>
+
+</div>

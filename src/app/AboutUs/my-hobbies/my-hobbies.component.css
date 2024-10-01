@@ -1,0 +1,94 @@
+.hobbies{
+    width: 100%;
+    height: 1000px;
+   background: linear-gradient(45deg, #000000, #14213d);
+    /* background: conic-gradient(from 90deg,#000000, #14213d, #fca311); */
+    /* background: repeating-radial-gradient(circle,#000000, #14213d 10%,#fca311 20%); */
+
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 2.75rem;
+    font-family: "Edu QLD Beginner", cursive;
+
+}
+.my-hobbies{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+   padding-top: 70px;
+   
+}
+h3{
+    font-family: "Edu QLD Beginner", cursive;
+    color: white;
+    padding: 10px;
+  
+}
+.hobby{
+    width: 500px;
+    height: 550px;
+    opacity: 0.9;
+    padding: 20px;
+    transition: opacity 1.9s ease; 
+}
+.hobby:hover {
+    opacity: 1; 
+}
+.click {
+    padding: 10px;
+    margin-right: 10px;
+  background-color:#fca311 ;
+  border-radius: 30px;
+ font-weight: 600px;
+  
+}
+.click:hover{
+    background-color: #14213d;
+    color: #fca311;
+}
+@media (min-width:  767px) and (max-width: 1024px) {
+    .hobby{
+        width: 250px;
+        height: 350px;
+        opacity: 0.9;
+        transition: opacity 1.9s ease; 
+       
+    }
+ 
+}
+@media (min-width:  320px) and (max-width: 476px) {
+    .hobbies{
+        width: 1500px;
+        height: 2300px;
+       background: linear-gradient(45deg, #000000, #14213d);
+        /* background: conic-gradient(from 90deg,#000000, #14213d, #fca311); */
+        /* background: repeating-radial-gradient(circle,#000000, #14213d 10%,#fca311 20%); */
+  
+    }
+    .my-hobbies{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+       padding-top: 70px;
+       
+    }
+    h1{
+        text-align: left;
+        font-size: 3.75rem; 
+        padding: 20px;   
+    }
+    .hobby{
+        width: 950px;
+        height: 550px;
+        opacity: 0.9;
+        transition: opacity 1.9s ease;
+        padding-left: 20px; 
+    }
+    h3{
+        padding: 20px; 
+    }
+}

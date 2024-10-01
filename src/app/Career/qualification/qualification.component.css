@@ -1,0 +1,127 @@
+
+img {
+    position: relative;
+    top: 10px; 
+ 
+    width: 400px;
+    height: 400px;
+   /* border-radius: 250%; */
+   object-fit:contain;
+  }
+  .hero{
+    display: flex;
+    flex-direction: row;
+   width: 100%;
+   padding:60px;
+   background: linear-gradient(45deg, #000000, #14213d);
+  /* background-color:  #14213d; */
+   height: 100vh; 
+  
+  }
+.carousel{
+  width: 100%;
+  height: auto;
+}
+  .sub-hero{
+    color: black;
+    font-size: 2.77rem;
+    font-weight: 600;
+    font-family: "Edu QLD Beginner", cursive;
+   margin-top: 100px;
+   color: #fca311;
+  }
+  .sub-class{
+    flex: 1;
+   
+  }
+  .anime {
+    text-align: right;
+    color: #fca311;
+    font-family: "Edu QLD Beginner", cursive;
+    padding: 60px;
+    overflow: hidden;
+    white-space: nowrap; 
+    display: inline-block; 
+    border-right: 2px solid transparent;
+    animation: 
+      typing 2s steps(18) 1s infinite, 
+      cursor .5s step-end infinite alternate; 
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  /* @keyframes cursor {
+    50% { border-color: #14213d; }
+  } */
+  
+  @media (min-width:  767px) and (max-width: 1024px) {
+    .hero{
+      display: flex;
+      flex-direction: column;
+     
+    
+     background: linear-gradient(45deg, #000000, #14213d);
+    /* background-color:  #14213d; */
+     height: 100vh; 
+    
+    }
+    img {
+      position: relative;
+    right: 130px;
+   
+      width: 300px;
+      height: 200px;
+     /* border-radius: 250%; */
+     object-fit:contain;
+    }
+    .sub-hero{
+   
+      font-size: 1.37rem;
+      font-weight: 300;
+      font-family: "Edu QLD Beginner", cursive;
+     margin-top: -10px;
+     color: #fca311;
+    }
+  h1{
+    font-size: 30px;
+  }
+  .anime {
+ 
+    padding: 20px;
+ 
+  }
+  
+  }
+  @media (min-width:  320px) and (max-width: 476px) {
+    /* .hero{
+      display: flex;
+      flex-direction: row;
+     width: 1200px;
+     padding:60px;
+     background: linear-gradient(45deg, #000000, #14213d);
+     height: 100vh; 
+    
+    }
+    .sub-hero{
+      color: black;
+      font-size: 2.77rem;
+      font-weight: 600;
+      font-family: "Edu QLD Beginner", cursive;
+     margin-top: 100px;
+     color: #fca311;
+     width: 900px;
+    } */
+    .hero{
+      display: flex;
+      flex-direction: row;
+     width: 500%;
+     padding:60px;
+     background: linear-gradient(45deg, #000000, #14213d);
+    /* background-color:  #14213d; */
+     height: 100vh; 
+    
+    }
+  }
