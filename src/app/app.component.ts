@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { RegistrationService } from './registration.service';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { RegistrationService } from './service/registration.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,26 @@ import { RegistrationService } from './registration.service';
 })
 export class AppComponent {
   title = 'my-resume';
-  constructor(public service:RegistrationService){
+  isLogin:boolean=false;
+  isMenuOpen = false;
 
+
+
+  
+  constructor(public service:RegistrationService,private route:Router,private cdr:ChangeDetectorRef){
+ 
+    this.service.loggedIn.subscribe(loggedIn=>{
+      this.isLogin=loggedIn;
+      this.cdr.detectChanges();
+    })
   }
+
+
+
+  loggedOut(){
+    this.service.logout();
+    this.route.navigate(['/home']);
+    this.isMenuOpen = false;
+  }
+ 
 }

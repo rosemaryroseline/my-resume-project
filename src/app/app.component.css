@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&display=swap');
-
-body{
-    font-family: "Edu QLD Beginner", cursive;
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');body{
+    font-family: "Tinos", serif;
 
 }
 h1,h2,h3,h4,h5,p{
-    font-family: "Edu QLD Beginner", cursive;
-
+    font-family: "Tinos", serif;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.navbar-toggle {
+    display: none; 
 }
 .navbar{
    width: 100%;
@@ -38,10 +38,9 @@ h1,h2,h3,h4,h5,p{
 }
 .navbar-item a{
     text-decoration: none;
-    color: #fca311;
+    color: #eae0d5;
     font-size: 20px;
-    font-family: "Edu QLD Beginner", cursive;
-}
+    font-family: "Tinos", serif;}
 .dropdown-menu {
     display: none; 
     position: absolute; 
@@ -58,13 +57,13 @@ h1,h2,h3,h4,h5,p{
 }
 
 .dropdown-item a {
-    color:  #fca311;
+    color:  #eae0d5;
     font-size: 16px;
    
 } 
  
 .dropdown-item a:hover {
-    color:  #fca311;
+    color:  black;
  
 }
 
@@ -73,18 +72,60 @@ h1,h2,h3,h4,h5,p{
     display: block;
    
 }
-@media(max-width: 768px){
+@media (min-width:  768px) and (max-width: 1028px) {
     .navbar-item a{
         font-size: 15px;
     }
-}
-@media (min-width:  320px) and (max-width: 476px) {
-    .navbar-item a{
-        font-size: 40px;
-    }
     .navbar{
-        width: 100%;
-        height: 100px;
+        width: 90%;
+        height: 40px;
+       
+        display: flex;
+        align-items: center;
+        position: fixed;
+        z-index: 900;
+     
+        padding: 10px 80px;
+       justify-content: flex-end;
          
      }
+}
+@media (min-width:  320px) and (max-width: 476px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+  
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 50px; 
+        left: 0;
+        z-index: 1000;
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-item a {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+
+    .navbar-menu.open {
+        display: flex;
+    }
+
+    
+    .navbar-toggle {
+        display: block;
+        padding: 5px;
+    }
 }

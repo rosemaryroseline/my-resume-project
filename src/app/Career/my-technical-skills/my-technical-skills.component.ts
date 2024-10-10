@@ -10,4 +10,5 @@ export class MyTechnicalSkillsComponent {
   click(event:Event):void{
 this.message='coming soon...!'
   }
+  
 }

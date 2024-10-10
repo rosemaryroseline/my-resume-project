@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { RegistrationService } from '../registration.service';
+import { RegistrationService } from '../service/registration.service';
 import { FormBuilder, FormGroup, Validators,AbstractControl } from '@angular/forms';
-import { Contact } from '../registration';
+import { Contact } from '../service/registration';
 
 @Component({
   selector: 'app-contact',
@@ -14,16 +14,16 @@ myContact:Contact[]=[]
 constructor(private service:RegistrationService,private fb:FormBuilder){
 
 }
-customEmailValidator(control: AbstractControl): { [key: string]: any } | null {
+static customEmailValidator(control: AbstractControl): { [key: string]: any } | null {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const valid = emailRegex.test(control.value);
   return valid ? null : { 'emailInvalid': true };
 }
 ngOnInit(){
 this.valid=this.fb.group({
-  Name:['',[Validators.required,Validators.minLength(5)]],
-  Email:['',[Validators.required,this.customEmailValidator]],
-  Message:['',[Validators.required,]]
+  name:['',[Validators.required,Validators.minLength(5)]],
+  email:['',[Validators.required,ContactComponent.customEmailValidator]],
+  message:['',[Validators.required,]]
 })
 }
 

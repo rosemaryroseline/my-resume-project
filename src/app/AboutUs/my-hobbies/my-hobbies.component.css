@@ -1,94 +1,152 @@
-.hobbies{
-    width: 100%;
-    height: 1000px;
-   background: linear-gradient(45deg, #000000, #14213d);
-    /* background: conic-gradient(from 90deg,#000000, #14213d, #fca311); */
-    /* background: repeating-radial-gradient(circle,#000000, #14213d 10%,#fca311 20%); */
 
-    padding: 20px;
+.hobbies {
+    width: 100%;
+    height: 900px;
+    background-color: #c6ac8f;
+    padding: 100px;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 2.75rem;
-    font-family: "Edu QLD Beginner", cursive;
+    font-family: "Tinos", serif;
+    font-weight: 700;
 
 }
-.my-hobbies{
+
+p {
+    font-weight: 600;
+}
+
+.my-hobbies {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-   padding-top: 70px;
-   
+    padding-top: 70px;
+    gap: 20px; 
 }
-h3{
-    font-family: "Edu QLD Beginner", cursive;
-    color: white;
-    padding: 10px;
-  
-}
-.hobby{
+
+.hobby-container {
+    position: relative;
     width: 500px;
     height: 550px;
+    padding:  0px ;
+}
+
+.hobby {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
     opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+
+.hobby-container:hover .hobby {
+    opacity: 0.7;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
     padding: 20px;
-    transition: opacity 1.9s ease; 
 }
-.hobby:hover {
-    opacity: 1; 
+
+.overlay-text {
+    color: white;
+    font-size: 18px;
+  margin-top: 220px;
+    padding: 20px;
 }
-.click {
+
+.hobby-container:hover .overlay {
+    opacity: 1; /* Keeps the overlay dark on hover */
+}
+
+h3 {
+    font-family: "Tinos", serif;
+    color: #0a0908;
     padding: 10px;
-    margin-right: 10px;
-  background-color:#fca311 ;
-  border-radius: 30px;
- font-weight: 600px;
-  
 }
-.click:hover{
-    background-color: #14213d;
-    color: #fca311;
-}
+
 @media (min-width:  767px) and (max-width: 1024px) {
-    .hobby{
-        width: 250px;
-        height: 350px;
-        opacity: 0.9;
-        transition: opacity 1.9s ease; 
-       
+    .hobbies {
+        width: 100%;
+        height: 2200px;
+        background-color: #c6ac8f;
+      padding-top: 350px;
     }
- 
-}
-@media (min-width:  320px) and (max-width: 476px) {
-    .hobbies{
-        width: 1500px;
-        height: 2300px;
-       background: linear-gradient(45deg, #000000, #14213d);
-        /* background: conic-gradient(from 90deg,#000000, #14213d, #fca311); */
-        /* background: repeating-radial-gradient(circle,#000000, #14213d 10%,#fca311 20%); */
-  
+    
+    h1 {
+        text-align: center;
+        font-size: 2.75rem;
+        font-family: "Tinos", serif;
+        font-weight: 700;
+    
     }
-    .my-hobbies{
+    
+    p {
+        font-weight: 600;
+    }
+    
+    .my-hobbies {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
-       padding-top: 70px;
-       
+        padding-top: 70px;
+        gap: 20px; 
     }
-    h1{
-        text-align: left;
-        font-size: 3.75rem; 
-        padding: 20px;   
-    }
-    .hobby{
-        width: 950px;
-        height: 550px;
-        opacity: 0.9;
-        transition: opacity 1.9s ease;
-        padding-left: 20px; 
-    }
-    h3{
-        padding: 20px; 
-    }
+    
+   
+   
+}
+@media (min-width:  320px) and (max-width: 476px) {
+   
+.hobbies {
+    width: 450%;
+    height: 1900px;
+    background-color: #c6ac8f;
+    padding: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.75rem;
+    font-family: "Tinos", serif;
+    font-weight: 700;
+
+}
+
+p {
+    font-weight: 600;
+}
+
+.my-hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-top: 70px;
+    gap: 30px; 
+}
+
+.hobby-container {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    padding:  0px ;
+}
+
+
 }

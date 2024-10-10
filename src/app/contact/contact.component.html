@@ -1,38 +1,41 @@
 
 <div class="hero">
     <div  class="sub-class">
-        <img src="../assets/image/pic2.jpeg" alt="Description of image">
-      
-    </div>
-   
-    <form class="form" [formGroup]="valid" (ngSubmit)="onSubmit()">
-         <h1>Get In Touch</h1>
-        <label for="">Name<br>
-            <input type="text" placeholder="" formControlName="Name">
-            <div *ngIf="valid.get('Name')?.invalid && valid.get('Name')?.touched">
-                <small *ngIf="valid.get('Name')?.errors?.['required']" style="color: red;">Name is required</small>
-                <small *ngIf="valid.get('Name')?.errors?.['minlength']" style="color: red;">Name must be atleast 5 characters</small>
-            </div>
-        </label>
-       
-        <label for="">Email<br>
-            <input type="email" placeholder="" formControlName="Email">
-            <div *ngIf="valid.get('Email')?.invalid && valid.get('Email')?.touched">
-                <small *ngIf="valid.get('Email')?.errors?.['required']" style="color: red;">Email is required</small><br>
-                <small *ngIf="valid.get('Email')?.errors?.['emailInvalid'] && !valid.get('Email')?.errors?.['required']" style="color: red;">enter valid email</small>
-
-            </div>
-        </label><br>
-        <label for="">Leave some words<br>
-           
-        </label><br>
-        <textarea id="description" name="description" placeholder="" formControlName="Message"></textarea>
-        <div *ngIf="valid.get('Message')?.invalid && valid.get('Message')?.touched">
-            <small *ngIf="valid.get('Message')?.errors?.['required']" style="color: red;">atleast say hi to rose...before submitting</small>
+        <!-- <img src="../assets/image/pic2.jpeg" alt="Description of image"> -->
+        <form class="form" [formGroup]="valid" (ngSubmit)="onSubmit()">
+            <h1>Get In Touch</h1>
+           <label for="">Name<br>
+               <input type="text" placeholder="" formControlName="name">
+               <div *ngIf="valid.get('name')?.invalid && valid.get('name')?.touched">
+                   <small *ngIf="valid.get('name')?.errors?.['required']" style="color: red;">Name is required</small>
+                   <small *ngIf="valid.get('name')?.errors?.['minlength']" style="color: red;">Name must be atleast 5 characters</small>
+               </div>
+           </label>
           
-        </div>
-        <button type="submit" id="button">Submit</button>
-    </form>
+           <label for="">Email<br>
+               <input type="email" placeholder="" formControlName="email">
+               <div *ngIf="valid.get('email')?.invalid && valid.get('email')?.touched">
+                   <small *ngIf="valid.get('email')?.errors?.['required']" style="color: red;">Email is required</small><br>
+                   <small *ngIf="valid.get('email')?.errors?.['emailInvalid'] && !valid.get('Email')?.errors?.['required']" style="color: red;">enter valid email</small>
+   
+               </div>
+           </label><br>
+           <label for="">Leave some words<br>
+              
+           </label><br>
+           <textarea id="description" name="description" placeholder="" formControlName="message"></textarea>
+           <div *ngIf="valid.get('message')?.invalid && valid.get('message')?.touched">
+               <small *ngIf="valid.get('message')?.errors?.['required']" style="color: red;">atleast say hi to rose...before submitting</small>
+             
+           </div>
+           <button type="submit" id="button">Submit</button>
+       </form>
+   
+    </div>
+    <h2 class="typing-text">See You Then!</h2>
+
+   
     </div>
   
-   
+    <!-- <app-reset-password></app-reset-password>
+    <app-forgot-password></app-forgot-password> -->

@@ -1,27 +1,32 @@
-<nav class="navbar">
 
-  <ul class="navbar-menu">
-      <li class="navbar-item" ><a routerLink="home">Home</a></li>
-      <li class="navbar-item"><a routerLink="about">About me</a>
+<nav class="navbar">
+  <button class="navbar-toggle" (click)="isMenuOpen = !isMenuOpen">
+    &#9776; 
+  </button>
+
+  <ul class="navbar-menu" [class.open]="isMenuOpen">
+    <li class="navbar-item"><a routerLink="home">Home</a></li>
+    <li class="navbar-item"><a routerLink="about">About me</a>
       <ul class="dropdown-menu">
-        <li class="dropdown-item" href="#"><a routerLink="my-hobbies">Hobbies</a></li>
-        <li class="dropdown-item" href="#"><a href="">Strength</a></li>
-        <li class="dropdown-item" href="#"><a href="">Interest</a></li>
-      </ul></li>
-      <li class="navbar-item"><a routerLink="career">Career</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item" href="#"><a routerLink="qualification">Qualification</a></li>
-          <li class="dropdown-item" href="#"><a routerLink="skills">Skills</a></li>
-        </ul></li>
-      <li class="navbar-item"><a routerLink="contact">Contact</a></li>
-      <li class="navbar-item" ><a routerLink="sign-in">Sign-in</a>
-        
-        
-       
-      </li>
-     
+        <li class="dropdown-item"><a routerLink="my-hobbies">Hobbies</a></li>
+        <li class="dropdown-item"><a href="#">Strength</a></li>
+        <li class="dropdown-item"><a href="#">Interest</a></li>
+      </ul>
+    </li>
+    <li class="navbar-item"><a routerLink="career">Career</a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item"><a routerLink="qualification">Qualification</a></li>
+        <li class="dropdown-item"><a routerLink="skills">Skills</a></li>
+        <li class="dropdown-item"><a routerLink="experience">Experience</a></li>
+      </ul>
+    </li>
+    <li class="navbar-item"><a routerLink="contact">Contact</a></li>
+    <li class="navbar-item" *ngIf="!isLogin"><a routerLink="sign-in">Sign-in</a></li>
+    <li class="navbar-item" *ngIf="isLogin"><a (click)="loggedOut()">Logout</a></li>
   </ul>
 </nav>
+
+<router-outlet></router-outlet>
 
 <!-- <app-main-resume></app-main-resume>-->
  

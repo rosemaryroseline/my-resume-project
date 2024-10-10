@@ -1,0 +1,130 @@
+
+img {
+    position: relative;
+    top: -10px; 
+    left: 60px; 
+    width: 500px;
+    height: auto;
+   border-radius: 50%;
+   object-fit:cover;
+  }
+  .hero{
+    display: flex;
+    flex-direction: row;
+   
+   padding:120px;
+   /* background: linear-gradient(85deg, #caa8f5, #9984d4, #592e83); */
+   background: #c6ac8f;
+  padding-top: 90px;
+   height: 120vh; 
+  
+  }
+
+  #sub-hero{
+    color: black;
+    font-weight: 400;
+    font-family: "Tinos", serif;   
+     margin-top: 120px;
+   
+  }
+
+  .sub-class{
+    flex: 1;
+   
+  }
+  #button{
+    background: #22333b;
+    padding: 10px 40px;
+    color:#eae0d5;
+  }
+  #button:hover{
+    background-color:#eae0d5;
+    color:#22333b;
+    font-size: large;
+    font-weight: 600;
+    width: 200px;
+  }
+  @media (min-width:  768px) and (max-width: 1028px) {
+    img {
+        top: -5px; 
+        left: -75px; 
+        width: 300px;
+        height: auto;
+       
+      }
+      #sub-hero{
+        font-size: 1.22rem;
+        font-weight: 600;
+       
+      }
+      .hero{
+        display: flex;
+        flex-direction: row;
+       
+       padding:90px;
+       /* background: linear-gradient(85deg, #caa8f5, #9984d4, #592e83); */
+       background: #c6ac8f;
+      padding-top: 70px;
+       height: 120vh; 
+      
+      }
+      
+  #sub-hero{
+    color: black;
+    font-weight: 400;
+    font-family: "Tinos", serif;   
+     margin-top: 90px;
+   
+  }
+}
+@media (min-width:  320px) and (max-width: 476px) {
+  .hero{
+    display: flex;
+    flex-direction: column;
+   width: 450%;
+   padding:90px;
+ 
+  padding-top: 90px;
+   height: 300vh; 
+
+  }
+  
+  img {
+    position: relative;
+    top: 10px; 
+    left: 200px; 
+    width: 600px;
+    height: 800px;
+   border-radius: 20%;
+   object-fit:cover;
+  
+  }
+
+#sub-hero{
+ 
+  font-size: 2.77rem;
+  font-weight: 400;
+ padding:50px 60px;
+ text-align: start;
+}
+#button{
+ 
+  padding: 10px;
+  border-radius: 15px;
+  color: black;
+  margin-left: 350px;
+
+}
+p{
+  margin-left: 50px;
+}
+#button{
+  background: #22333b;
+  padding: 20px 40px;
+  color:#eae0d5;
+  margin-left: 45px;
+}
+
+
+
+}
