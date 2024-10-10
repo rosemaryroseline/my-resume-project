@@ -1,0 +1,136 @@
+.auther{
+    width: 100%;
+    height: 800px;
+    background-color:#c6ac8f;
+    padding-top: 50px;
+
+}
+.sub-auther{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+    /* background-color: #fca311; */
+    /* background: linear-gradient(45deg,#fca311, #14213d); */
+    /* background: linear-gradient(to right, #000000, #14213d); */
+background: #22333b;
+
+   margin-top: 70px;
+   left: 560px;
+   padding: 15px;
+   border-radius: 10px;
+   border-style:groove;
+   box-shadow: 0 0 60px #0a0908; 
+            overflow: hidden; 
+   z-index: 1;
+   border-color:  #22333b;
+}
+h2,h6{
+    font-family: "Tinos", serif;
+    text-align: center;
+    color:#eae0d5;
+ 
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='submit']
+{
+    position: relative;
+    width: 250px;
+    height: 15px;
+    padding: 20px;
+   margin-left: 50px;
+  margin-bottom: 30px;
+  border-radius: 1px;
+  background-color: transparent;
+ 
+  color: aliceblue;
+ 
+
+}
+.button{
+    position: absolute;
+    margin-left: 50px;
+    padding: 8px 98px;
+    background-color: #eae0d5;
+    color: #22333b;
+}
+.button:hover{
+    background-color: #c6ac8f ;
+    color:#22333b ;
+}
+.toggle{
+    margin-top: 90px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    color:white;
+    font-size: 1.15rem;
+  margin-left: -15px;
+}
+
+.error{
+    color: red;
+    padding-top: 40px;
+    padding-left: 90px;
+}
+
+@media (min-width:  768px) and (max-width: 1028px) {
+    .sub-auther{
+        position: absolute;
+        width: 45%;
+        height: 400px;
+      
+       margin-top: 70px;
+       left: 220px;
+       padding: 15px;
+      
+    }
+
+.toggle{
+    margin-top: 50px;
+}
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='submit']
+{
+   
+   margin-left: 30px;
+ 
+}
+.button{
+    position: absolute;
+    margin-left: 30px;
+    padding: 8px 98px;
+   
+}
+}
+@media (min-width:  320px) and (max-width: 476px) {
+    .auther{
+        width: 450%;
+        height: 800px;
+        background-color:#c6ac8f;
+        padding-top: 50px;
+    
+    }
+    .sub-auther{
+        position: absolute;
+        width: 130%;
+        height: 500px;
+       
+    background: #22333b;
+    
+       margin-top: 70px;
+       left: 360px;
+       padding: 35px;
+     
+    }
+    h2,h6{
+        font-family: "Tinos", serif;
+        text-align: center;
+        color:#eae0d5;
+     
+    }
+   
+}

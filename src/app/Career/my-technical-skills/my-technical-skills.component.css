@@ -1,37 +1,37 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "Edu QLD Beginner", cursive;
+    font-family: "Tinos", serif;   
 }
 .body{
-    background-color:#14213d;
-    padding: 60px 20px;
+    background: #c6ac8f;
+        padding: 20px 120px;
     display: flex;
     flex-direction: row;
 }
 h1{
     text-align: center;
-    color: #fca311;
+    color: #eae0d5;
 }
 h3{
     margin:5px;
-    color: #fca311;
+    color: #eae0d5;
 }
 .skill{
     width: 500px;
     margin: 40px;
     padding: 20px;
-    color: black;
+    color: #22333b;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
     /* background: linear-gradient(to right, #000000, #14213d); */
-    background-color: black;
+    background-color:#22333b;
 }
 .skill li{
     margin:10px 0;
     padding: 5px;
 }
 .bar{
-    background:#14213d;
+    background:#c6ac8f;
 display: block;
 height: 20px;
 border: 1px solid rgba(0,0,0,0.3);
@@ -47,7 +47,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 .bar span{
    height: 20px;
    float: left;
-   background: linear-gradient(135deg,rgb(192, 157, 4)0%,rgb(36, 65, 105)100%);
+   background: linear-gradient(135deg,rgb(16, 198, 22)0%,rgb(36, 65, 105)100%);
 
 }
 .html{
@@ -131,14 +131,14 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 h2{
     text-align: center;
     font-size: 2.77rem;
-    color: #fca311;
+    color: #0a0908;
     padding-top: 70px;
 }
 #button{
     padding: 10px 50px;
-    background-color: #071229;
-    color: #fca311;
-   margin-left:  450px;
+    background-color:#22333b;
+    color: #eae0d5;
+   margin-left:  350px;
    margin-top: 20px;
    
 }
@@ -152,7 +152,7 @@ h2{
     h2{
         text-align: center;
         font-size: 1.37rem;
-        color: #fca311;
+      
         padding-top: 20px;
     }
     #button{
@@ -168,20 +168,34 @@ h2{
 }
 @media (min-width:  320px) and (max-width: 476px) {
 
-    /* .skill{
-        width: 900px;
-        margin: 40px;
-        padding: 20px;
-        color: black;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
-     
-        background-color: black;
-    }   */
+   
     .body{
-        background-color:#14213d;
-        width:1700px;
-        padding: 60px 20px;
+      
+        width:1600px;
+        padding: 30px 20px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill{
+        width: 700px;
+     margin-left: -330px;
+        padding: 20px;
+    }
+    h2{
+        text-align: center;
+        font-size: 2.77rem;
+        color: #0a0908;
+        padding-top: 70px;
+        margin-left: -300px;
+    }
+    #button{
+        padding: 10px 50px;
+        background-color:#22333b;
+        color: #eae0d5;
+       margin-left:  20px;
+       margin-top: 20px;
+       
     }
 }
