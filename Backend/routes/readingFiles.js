@@ -1,5 +1,6 @@
+require('dotenv').config();
 const express=require('express')
-const app=express();
+
 const fs=require('fs')
 const path=require('path');
 const User=require('../db')
@@ -9,7 +10,7 @@ const router=express.Router();
 
 
 router.get('/downloadFile',async(req,res)=>{
-// const path=['files','file.txt']
+
     const filePath=path.join(__dirname,'..','files','myresume.pdf')
     console.log('reading file',filePath)
     res.download(filePath,(err)=>{

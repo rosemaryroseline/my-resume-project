@@ -74,7 +74,9 @@ input[type='submit']
     padding-top: 40px;
     padding-left: 90px;
 }
-
+.emailExistMessage{
+    color: red;
+}
 @media (min-width:  768px) and (max-width: 1028px) {
     .sub-auther{
         position: absolute;
